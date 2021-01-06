@@ -1,6 +1,18 @@
 # Project 05: US Census Bureau Web Scraper
 > A python script that extracts web links from the _Population and Housing Unit Estimates_ web page of the U.S. Census Bureau and outputs those links in a CSV file in an absolute and non-duplicated format. 
 
+Table of Contents
+---
+1. [General Information](#general-information)
+2. [Summary](#summary)
+3. [Tech Stack](#tech-stack)
+4. [Code Examples](#data-preprocessingcleaning)
+
+<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#general-information"/>
+<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#summary"/>
+<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#tech-stack"/>
+<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#data-preprocessingcleaning"/>
+
 General Information
 ---
 The project is part of a graduate course (_Programming in Python_) at Western Governor's University. 
@@ -13,7 +25,7 @@ Tech Stack
 ---
 * Python (requests, csv, BeautifulSoup)
 
-Example Code
+Code Examples
 ---
 ```
 r = requests.get("https://www.census.gov/programs-surveys/popest.html")
@@ -42,3 +54,5 @@ with open('links.csv', 'w') as f:
     f.close()
 ```
 There is a total of 227 URLs from the web page. An unordered and unindexed set is created called myset. The link.get(‘href’) function extracts all links contained within each identified href tag and goes through a for loop. For all relative links that starts with “/,” it is being concatenated with a domain website and added to the set. Otherwise, all unique links are added to the set and no duplicates are added. In total, there are 119 URLs in the set.
+
+To see the full code, check out US Census Bureau Web Scraper.ipynb.
