@@ -6,12 +6,12 @@ Table of Contents
 1. [General Information](#general-information)
 2. [Summary](#summary)
 3. [Tech Stack](#tech-stack)
-4. [Code Examples](#data-preprocessingcleaning)
+4. [Code Examples](#code-examples)
 
-<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#general-information"/>
-<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#summary"/>
-<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#tech-stack"/>
-<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#data-preprocessingcleaning"/>
+<a name="https://github.com/sangtvo/US-Census-Bureau-Web-Scraper#general-information"/>
+<a name="https://github.com/sangtvo/US-Census-Bureau-Web-Scraper#summary"/>
+<a name="https://github.com/sangtvo/US-Census-Bureau-Web-Scraper#tech-stack"/>
+<a name="https://github.com/sangtvo/US-Census-Bureau-Web-Scraper#code-examples"/>
 
 General Information
 ---
@@ -24,6 +24,8 @@ A web scraper is created by using Python and scraped 227 links from the [Populat
 Tech Stack
 ---
 * Python (requests, csv, BeautifulSoup)
+* Jupyter Notebook
+* Visual Studio Code 
 
 Code Examples
 ---
