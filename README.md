@@ -13,9 +13,15 @@ Tech Stack
 ---
 * Python (requests, csv, BeautifulSoup)
 
-Code
+Example Code
 ---
-```myset = set()
+```
+r = requests.get("https://www.census.gov/programs-surveys/popest.html")
+page = r.text
+soup = BeautifulSoup(page, 'html.parser')
+raw_links = soup.find_all("a", href = True)
+
+myset = set()
 for link in raw_links:
     hrefs = link.get('href')
     if hrefs.startswith('None'):
@@ -33,4 +39,6 @@ with open('links.csv', 'w') as f:
     writer = csv.writer(f)
     for links in myset:
         writer.writerow([links])
-    f.close()```
+    f.close()
+```
+There is a total of 227 URLs from the web page. An unordered and unindexed set is created called myset. The link.get(‘href’) function extracts all links contained within each identified href tag and goes through a for loop. For all relative links that starts with “/,” it is being concatenated with a domain website and added to the set. Otherwise, all unique links are added to the set and no duplicates are added. In total, there are 119 URLs in the set.
