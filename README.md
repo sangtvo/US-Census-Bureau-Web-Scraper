@@ -55,6 +55,6 @@ with open('links.csv', 'w') as f:
         writer.writerow([links])
     f.close()
 ```
-There is a total of 227 URLs from the web page. An unordered and unindexed set is created called myset. The link.get(‘href’) function extracts all links contained within each identified href tag and goes through a for loop. For all relative links that starts with “/,” it is being concatenated with a domain website and added to the set. Otherwise, all unique links are added to the set and no duplicates are added. In total, there are 119 URLs in the set.
+There is a total of 227 URLs from the web page. An unordered and unindexed set is created called myset. The ```link.get(‘href’)``` function extracts all links contained within each identified href tag and goes through a for loop. For all relative links that starts with “/,” it is being concatenated with a domain website and added to the set. Otherwise, all unique links are added to the set and no duplicates are added. In total, there are 119 URLs in the set.
 
 To see the full code, check out US Census Bureau Web Scraper.ipynb.
