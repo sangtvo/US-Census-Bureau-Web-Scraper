@@ -23,7 +23,10 @@ A web scraper is created by using Python and scraped 227 links from the [Populat
 
 Tech Stack
 ---
-* Python (requests, csv, BeautifulSoup)
+* Python
+    * BeautifulSoup
+    * csv
+    * requests
 * Jupyter Notebook
 * Visual Studio Code 
 
