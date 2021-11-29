@@ -15,7 +15,7 @@ Table of Contents
 
 General Information
 ---
-The project is part of a graduate course (_Programming in Python_) at Western Governor's University. 
+A project on web scraping.
 
 Summary
 ---
