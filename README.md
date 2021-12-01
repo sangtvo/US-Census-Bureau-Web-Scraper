@@ -1,4 +1,4 @@
-# Project 05: US Census Bureau Web Scraper
+# US Census Bureau Web Scraper
 > A python script that extracts web links from the _Population and Housing Unit Estimates_ web page of the U.S. Census Bureau and outputs those links in a CSV file in an absolute and non-duplicated format. 
 
 Table of Contents
